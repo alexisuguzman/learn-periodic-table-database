@@ -1,0 +1,159 @@
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+__vsc_is_windows=0
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+builtin printf "\e]633;P;ContinuationPrompt=$(echo "$PS2" | sed 's/\x1b/\\\\x1b/g')\a"
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=periodic_table
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+__vsc_is_windows=0
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+builtin printf "\e]633;P;ContinuationPrompt=$(echo "$PS2" | sed 's/\x1b/\\\\x1b/g')\a"
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+mkdir periodic_table
+git init
+cd periodic_table
+git init
+git branch main
+git cehckout -b main
+git checkout -b main
+git branch
+git branch show
+git checkout -b main
+git status
+git add .
+git status
+touch element.sh
+git add .
+git status
+git commit -m "feat: create element.sh file"
+git branch
+chmod +x element.sh
+git rebase --interactive HEAD
+git status
+git stash
+git rebase --interactive HEAD
+git reset --hard HEAD
+git log
+git log
+cd ..
+mkdir periodic_table
+cd periodic_table
+git init
+git log
+git checkout -b main
+touch element.sh
+chmod +x element.sh
+git status
+git add .
+git status
+git diff
+git commit -m "Initial commit"
+git checkout -b feat/add-argument-handling
+./element.sh
+./element.sh
+./element.sh 1
+./element.sh 1
+./element.sh 1
+./element.sh 1
+./element.sh 1
+./element.sh 1
+./element.sh 1
+./element.sh hyfrogen
+./element.sh hyfrogen
+./element.sh hyfrogen
+./element.sh 1
+./element.sh 1
+git branch
+git add .
+git status
+git commit -m "feat: added empty argument handling"
+git checkout main
+git merge feat/add-argument-handling
+git branch -d feat/add-argument-handling
+git checkout feat/query-element-info
+git checkout -b feat/query-element-info
+./element.sh
+./element.sh
+./element.sh 1
+./element.sh 1
+./element.sh
+./element.sh 1
+./element.sh 1
+./element.sh 1
+git add .
+gti status
+git status
+git diff
+git status
+git diff
+git diff main
+git commit -m "feat: added element info querying"
+git checkout main
+git merge feat/query-element-info
+git checkout -b fix/query-arguments-and-commands
+./element.sh
+./element.sh 1
+./element.sh 1
+git add .
+git commit -m "fix: query string not being interpreted correctly and cleaned up column selections"
+git checkout main
+git merge fix/query-arguments-and-commands
+git log
+git checkout -b feat/format-info-and-handle-non-existing-elements
+./element.sh 1
+./element.sh 1
+./element.sh 5
+git status
+git add .
+git status
+git diff main
+git commit -m "feat: format info and handle non existing elements"
+git log
+git checkout main
+git merge feat/format-info-and-handle-non-existing-elements
+./element.sh
+./element.sh 1
+git status
+git add .
+git commit -m "feat: Completed Project"
+git status
