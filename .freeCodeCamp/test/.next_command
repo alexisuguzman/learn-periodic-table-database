@@ -187,3 +187,6 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 git fetch upstream
 git log
 git fetch
+git init
+git remote -v
+git add .
