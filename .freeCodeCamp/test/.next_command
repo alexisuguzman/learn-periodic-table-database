@@ -157,3 +157,4 @@ git status
 git add .
 git commit -m "feat: Completed Project"
 git status
+pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql
